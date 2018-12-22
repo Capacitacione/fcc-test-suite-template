@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
 
   <body>
@@ -12,97 +13,91 @@
     <p id="description">This survey pretends to know advanced knowledge in simple users about bulbs.</p>
 
     <div>
-    <form id="survey-form">
-      <div class="row">
-        <div id="label"></div>
-        <div id="input"></div>
-      </div>
-      <div class="row">
-        <div id="label">
-          <label id=name-label>Name* :</label>
+      <form id="survey-form">
+          <div class="rowA">
+            <span id="label">
+              <label id=name-label>Name* :</label>
+            </span>
+            <span id="input">
+              <input type="text" id="name" placeholder="Type your name" required/>
+            </span>
         </div>
-        <div id="input">
-          <input type="text" id="name" placeholder="Type your name" required/>
+            <div class="rowB">
+              <span id="label">
+                <label id=email-label>Email* :</label>
+              </span>
+              <span id="input">
+                <input type="email" id="email" placeholder="Type your e-mail" required/>
+              </span>
+            </div>
         </div>
-      </div>
-      <br>
-      <div class="row">
-          <div id="label">
-            <label id=email-label>Email* :</label>
-          </div>
-          <div id="input">
-            <input type="email" id="email" placeholder="Type your e-mail" required/>
-          </div>
+      
+        
+      <div class="rowA">
+        <span id="label">
+          <label id=number-label>Number* :</label>
+          </span>
+          <span id="input">
+            <input type="number" id="number" placeholder="Type your cellphone" min="0" max="12000000" required/>
+          </span>
         </div>
-      <br>
-      <div class="row">
-          <div id="label"></div>
-          <div id="input"></div>
+        <div class="rowB">
+          <span id="label">
+            <label id=name-label>Choose your age range* :</label>
+          </span>
+          <span id="input">
+            <select id="dropdown">
+              <option value="0">12- 18 years old</option>
+              <option value="1">19- 40 years old</option>
+              <option value="2">40 +</option>
+            </select>
+          </span>
         </div>
-      <label id=number-label>Number* :</label>
-      <input type="number" id="number" placeholder="Type your cellphone" min="0" max="12000000" required/>
-      <br>
-      <div class="row">
-          <div id="label"></div>
-          <div id="input"></div>
+        
+      <div class="rowA">
+        <span id="label">
+          <label id=name-label>Choose your favorite bulb technology :</label>
+        </span>
+          <span id="input">            
+            Led <input type="radio" name="radio-buttons" value="0">
+            <br>
+            Neon <input type="radio" name="radio-buttons" value="1">
+            <br>            
+            Filament <input type="radio" name="radio-buttons" value="2">
+          </span>
         </div>
-  
-      <label id=name-label>Choose your age range* :</label>
-      <select id="dropdown">
-        <option value="0">12- 18 years old</option>
-        <option value="1">19- 40 years old</option>
-        <option value="2">40 +</option>
-      </select>
-      <br>
-      <br>
-      <div class="row">
-          <div id="label"></div>
-          <div id="input"></div>
-        </div>
-  
-      <label id=name-label>Choose your favorite bulb technology :</label>
       <div>
-        <br>
-        Led <input type="radio" name="radio-buttons" value="0">
-        <br>
-        Neon <input type="radio" name="radio-buttons" value="1">
-        <br>
-        Filament <input type="radio" name="radio-buttons" value="2">
       </div>
-
-      <br>
-      <br>
-      <div class="row">
-          <div id="label"></div>
-          <div id="input"></div>
-        </div>
-  
-      <label id=name-label>Choose your favorite bulb technology :</label>
-      <div>
-        <br>
-        White <input type="checkbox" name="chk-group" value="0">
-        <br>
-        Yellow <input type="checkbox" name="chk-group" value="1">
-        <br>
-        Purple <input type="checkbox" name="chk-group" value="2">
-        <br>
-        Orange <input type="checkbox" name="chk-group" value="0">
-        <br>
-        Blue <input type="checkbox" name="chk-group" value="1">
-        <br>
-        Gold<input type="checkbox" name="chk-group" value="2">
+      
+      <div class="rowB">
+        <span id="label">
+          <label id=name-label>Choose your favorite bulb technology :</label>
+        </span>
+        <span id="input">
+          White <input type="checkbox" name="chk-group" value="0">
+          <br>          
+          Yellow <input type="checkbox" name="chk-group" value="1">
+          <br>          
+          Purple <input type="checkbox" name="chk-group" value="2">
+          <br>          
+          Orange <input type="checkbox" name="chk-group" value="0">
+          <br>          
+          Blue <input type="checkbox" name="chk-group" value="1">
+          <br>          
+          Gold<input type="checkbox" name="chk-group" value="2">
+        </span>
       </div>
-      <div class="row">
-          <div id="label"></div>
-          <div id="input"></div>
-        </div>  
-      <label id=name-label>Aditional Comments:</label>
-      <textarea name="name" rows="4" cols="10"></textarea>
-      <br>
+      <div class="rowA">
+        <span id="label">
+          <label id=name-label>Aditional Comments:</label>
+        </span>
+        <span id="input">
+          <textarea name="name" rows="4" cols="10"></textarea>
+        </span>
+      </div>  
       <input type="submit" id="submit" text="submit">
-    </form>
+  </form>
   </div>
-
-    <script  src="js/index.js"></script>
-  </body>
+  <script  src="js/index.js"></script>
+</body>
 </html>

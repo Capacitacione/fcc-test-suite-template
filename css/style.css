@@ -1,0 +1,37 @@
+form {
+  display: block;
+  margin-top: 0em;
+}
+body {
+  text-align: center;
+  display: block;
+  margin: 8px;
+}
+
+
+#rowA {
+  display: block;
+  background-color: aliceblue;
+}
+
+#rowB {
+  display: block;
+  background-color: mintcream;
+  
+}
+
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 48%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.input {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
